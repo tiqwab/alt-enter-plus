@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>com.github.tiqwab.altenterplus</id>
+  <name>Alt Enter Plus</name>
+  <version>0.1.0</version>
+  <vendor email="tiqwab.ch90@gmail.com" url="https://github.com/tiqwab">tiqwab</vendor>
+
+  <description><![CDATA[
+      All you need is Alt+Enter.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <p>0.1.0</p>
+      <ul>
+        <li>Enable to 'Rename'</li>
+      </ul>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <intentionAction>
+      <className>com.github.tiqwab.altenterplus.RenameIntentionAction</className>
+    </intentionAction>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
